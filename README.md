@@ -1,8 +1,5 @@
 # 470FinalProject
 
-# 470FinalProject
-
-
 # Final Project Submission
 
 ## 1. List of the Names and Sections Numbers of Group Members
@@ -41,11 +38,11 @@ MyLang is a beginner-friendly programming language. Here's a simple tutorial to 
 
 ### Example Exercise
 Write a MyLang program that calculates the sum of two numbers and prints the result.
-number num1 = 10
-number num2 = 20
-number sum = num1 + num2
-print 'The sum is: '
-print sum
+- number num1 = 10
+- number num2 = 20
+- number sum = num1 + num2
+- print 'The sum is: '
+- print sum
 
 ## 4. Language Reference Manual - Language Key Words and How to Use Them Syntactically
 
