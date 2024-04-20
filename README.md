@@ -9,7 +9,7 @@
 ## 2. Final Version of Language Whitepaper and Language Specification Documentation
 
 ### Language Whitepaper
-The language, named "MyLang," is a simple programming language designed for educational purposes. It features a minimal set of keywords and constructs to facilitate learning and understanding of basic programming concepts.
+The language, named "Symplnym" is a simple programming language designed for educational purposes. It features a minimal set of keywords and constructs to facilitate learning and understanding of basic programming concepts.
 
 ### Language Specification
 - MyLang is a statically-typed language with a simple syntax.
