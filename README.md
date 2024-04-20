@@ -3,10 +3,8 @@
 # Final Project Submission
 
 ## 1. List of the Names and Sections Numbers of Group Members
-- John Doe (Section 001)
-- Jane Smith (Section 002)
-- Michael Johnson (Section 001)
-- Emily Davis (Section 002)
+- Cameron Bussom (Section 002)
+- Dharmik Patel (Section 001)
 
 ## 2. Final Version of Language Whitepaper and Language Specification Documentation
 
@@ -112,7 +110,6 @@ Write a MyLang program that calculates the sum of two numbers and prints the res
 - Testing and documentation required more effort than initially anticipated.
 
 ### Individual Conclusions
-- John Doe: I learned a lot about language design and parsing techniques during this project.
-- Jane Smith: Implementing the interpreter was a challenging but rewarding experience.
-- Michael Johnson: Collaborating with the team and dividing tasks effectively contributed to the project's success.
-- Emily Davis: Writing comprehensive test cases and documentation enhanced my understanding of the language.
+- Cameron Bussom: I learned a lot about language design and parsing techniques during this project.
+- Dharmik Patel: Implementing the interpreter was a challenging but rewarding experience.
+
