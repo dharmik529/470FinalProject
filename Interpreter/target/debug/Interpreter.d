@@ -1,1 +1,0 @@
-/Users/dharmikpatel/Documents/Coursework/Compiler\ Constructions/470FinalProject/interpreter/target/debug/interpreter: /Users/dharmikpatel/Documents/Coursework/Compiler\ Constructions/470FinalProject/interpreter/src/main.rs
