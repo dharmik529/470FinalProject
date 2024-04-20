@@ -92,9 +92,8 @@ Write a MyLang program that calculates the sum of two numbers and prints the res
 4. Build the project: `cargo build`
 5. Run the project: `cargo run`
 
-## 8. Link or Zip File to Access the Final Version of the Implemented Software
-- GitHub Repository: [https://github.com/dharmik529/470FinalProject](https://github.com/dharmik529/470FinalProject)]
-- Zip File: [Download Link](https://example.com/project.zip)
+## 8. Link to Access the Final Version of the Implemented Software
+- GitHub Repository: [https://github.com/dharmik529/470FinalProject](https://github.com/dharmik529/470FinalProject)
 
 ## 9. Conclusions - Post Mortem Documentation (By Team) and (Individual)
 
