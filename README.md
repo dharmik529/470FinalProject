@@ -81,27 +81,22 @@ Write a MyLang program that calculates the sum of two numbers and prints the res
   - AST and Interpreter: 10 days
   - Testing and Documentation: 5 days
 
-## 6. All Design Artifacts such as Class Diagrams, Pseudo Code, Flow Charts or other UML Models
-- Class Diagram: [Insert class diagram image or link]
-- Pseudo Code: [Insert pseudo code or link]
-- Flow Chart: [Insert flow chart image or link]
-
-## 7. Final Test Plan and Final Scripts to Implement the Test Suits and or Unit Tests
+## 6. Final Test Plan and Final Scripts to Implement the Test Suits and or Unit Tests
 - Test Plan: [Insert test plan document or link]
 - Test Scripts: [Insert test scripts or link to repository]
 
-## 8. Instructions to Download and Install the Final Version of the Final Project
+## 7. Instructions to Download and Install the Final Version of the Final Project
 1. Clone the project repository: `git clone https://github.com/username/project.git`
 2. Install Rust programming language: [Rust Installation Guide](https://www.rust-lang.org/tools/install)
 3. Navigate to the project directory: `cd project`
 4. Build the project: `cargo build`
 5. Run the project: `cargo run`
 
-## 9. Link or Zip File to Access the Final Version of the Implemented Software
+## 8. Link or Zip File to Access the Final Version of the Implemented Software
 - GitHub Repository: [https://github.com/username/project](https://github.com/username/project)
 - Zip File: [Download Link](https://example.com/project.zip)
 
-## 10. Conclusions - Post Mortem Documentation (By Team) and (Individual)
+## 9. Conclusions - Post Mortem Documentation (By Team) and (Individual)
 
 ### Team Conclusions
 - The project was successfully completed within the estimated timeline.
