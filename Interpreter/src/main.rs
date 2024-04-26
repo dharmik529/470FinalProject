@@ -32,6 +32,11 @@ enum TokenType {
     StringLiteral,
     Identifier,
     EOF,
+    LessThan,
+    GreaterThan,
+    LessThanEqual,
+    GreaterThanEqual,
+    NotEqual,
 }
 
 #[derive(Debug, Clone)]
@@ -309,6 +314,56 @@ impl Lexer {
                         value: Some(self.string_literal()),
                     };
                 }
+                '<' => {
+                    self.advance();
+                    if self.current_char == Some('=') {
+                        self.advance();
+                        return Token {
+                            token_type: TokenType::LessThanEqual,
+                            value: None,
+                        };
+                    }
+                    return Token {
+                        token_type: TokenType::LessThan,
+                        value: None,
+                    };
+                }
+                '>' => {
+                    self.advance();
+                    if self.current_char == Some('=') {
+                        self.advance();
+                        return Token {
+                            token_type: TokenType::GreaterThanEqual,
+                            value: None,
+                        };
+                    }
+                    return Token {
+                        token_type: TokenType::GreaterThan,
+                        value: None,
+                    };
+                }
+                '=' => {
+                    self.advance();
+                    if self.current_char == Some('=') {
+                        self.advance();
+                        return Token {
+                            token_type: TokenType::Equal,
+                            value: None,
+                        };
+                    }
+                    // Existing '=' case
+                }
+                '!' => {
+                    self.advance();
+                    if self.current_char == Some('=') {
+                        self.advance();
+                        return Token {
+                            token_type: TokenType::NotEqual,
+                            value: None,
+                        };
+                    }
+                    panic!("Invalid character");
+                }
                 _ => panic!("Invalid character"),
             }
         }
@@ -433,24 +488,42 @@ impl Parser {
 
     fn expr(&mut self) -> ASTNode {
         let mut node = self.term();
-
+    
         while self.current_token.token_type == TokenType::Plus
             || self.current_token.token_type == TokenType::Minus
+            || self.current_token.token_type == TokenType::LessThan
+            || self.current_token.token_type == TokenType::GreaterThan
+            || self.current_token.token_type == TokenType::LessThanEqual
+            || self.current_token.token_type == TokenType::GreaterThanEqual
+            || self.current_token.token_type == TokenType::Equal
+            || self.current_token.token_type == TokenType::NotEqual
         {
             let token = self.current_token.clone();
             if token.token_type == TokenType::Plus {
                 self.eat(TokenType::Plus);
             } else if token.token_type == TokenType::Minus {
                 self.eat(TokenType::Minus);
+            } else if token.token_type == TokenType::LessThan {
+                self.eat(TokenType::LessThan);
+            } else if token.token_type == TokenType::GreaterThan {
+                self.eat(TokenType::GreaterThan);
+            } else if token.token_type == TokenType::LessThanEqual {
+                self.eat(TokenType::LessThanEqual);
+            } else if token.token_type == TokenType::GreaterThanEqual {
+                self.eat(TokenType::GreaterThanEqual);
+            } else if token.token_type == TokenType::Equal {
+                self.eat(TokenType::Equal);
+            } else if token.token_type == TokenType::NotEqual {
+                self.eat(TokenType::NotEqual);
             }
-
+    
             node = ASTNode::BinaryExpr {
                 left: Box::new(node),
                 operator: token.token_type,
                 right: Box::new(self.term()),
             };
         }
-
+    
         node
     }
 
@@ -582,6 +655,11 @@ fn main() {
 
     // Test case 10: Complex expression with parentheses
     let lexer = Lexer::new("number result = (10 + 5) * (3 - 1)");
+    let mut parser = Parser::new(lexer);
+    let ast = parser.parse();
+    println!("{:?}", ast);
+
+    let lexer = Lexer::new("number result = 10 < 20");
     let mut parser = Parser::new(lexer);
     let ast = parser.parse();
     println!("{:?}", ast);
