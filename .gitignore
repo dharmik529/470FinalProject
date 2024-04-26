@@ -1,3 +1,5 @@
 **/target/**
 Interpreter/target/**
 interpreter/target/**
+
+*.pdf
