@@ -55,7 +55,7 @@ The test plan covers the following components:
 # Test Scripts
 
 ## Test Script 1: Variable Declaration
-​```rust
+```rust
 // Test case 1.1: Variable declaration with integer
 let lexer = Lexer::new("number myNum = 42");
 let mut parser = Parser::new(lexer);
@@ -79,10 +79,10 @@ let lexer = Lexer::new("list myList = [1, 2, 3]");
 let mut parser = Parser::new(lexer);
 let ast = parser.parse();
 println!("{:?}", ast);
-​```
+```
 
 ## Test Script 2: Print Statement
-​```rust
+```rust
 // Test case 2.1: Print statement with string literal
 let lexer = Lexer::new("print 'Hello, world!'");
 let mut parser = Parser::new(lexer);
@@ -94,19 +94,19 @@ let lexer = Lexer::new("print myVariable");
 let mut parser = Parser::new(lexer);
 let ast = parser.parse();
 println!("{:?}", ast);
-​```
+```
 
 ## Test Script 3: Function Declaration
-​```rust
+```rust
 // Test case 3.1: Function declaration with print statement
 let lexer = Lexer::new("func myFunc { print 'Hello, world!' }");
 let mut parser = Parser::new(lexer);
 let ast = parser.parse();
 println!("{:?}", ast);
-​```
+```
 
 ## Test Script 4: Binary Expression
-​```rust
+```rust
 // Test case 4.1: Binary expression with addition
 let lexer = Lexer::new("number result = 10 + 5");
 let mut parser = Parser::new(lexer);
@@ -124,13 +124,13 @@ let lexer = Lexer::new("number result = (10 + 5) * (3 - 1)");
 let mut parser = Parser::new(lexer);
 let ast = parser.parse();
 println!("{:?}", ast);
-​```
+```
 
 ## Test Script 5: Comparison Expression
-​```rust
+```rust
 // Test case 5.1: Less than comparison
 let lexer = Lexer::new("number result = 10 < 20");
 let mut parser = Parser::new(lexer);
 let ast = parser.parse();
 println!("{:?}", ast);
-​```
+```
