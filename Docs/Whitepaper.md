@@ -92,21 +92,17 @@ print sum
   - AST and Interpreter: 10 days
   - Testing and Documentation: 5 days
 
-## 6. Final Test Plan and Final Scripts to Implement the Test Suits and or Unit Tests
-- Test Plan: [Insert test plan document or link]
-- Test Scripts: [Insert test scripts or link to repository]
-
-## 7. Instructions to Download and Install the Final Version of the Final Project
+## 6. Instructions to Download and Install the Final Version of the Final Project
 1. Clone the project repository: `git clone https://github.com/dharmik529/470FinalProject.git`
 2. Install Rust programming language: [Rust Installation Guide](https://www.rust-lang.org/tools/install)
 3. Navigate to the project directory: `cd project`
 4. Build the project: `cargo build`
 5. Run the project: `cargo run`
 
-## 8. Link or Zip File to Access the Final Version of the Implemented Software
+## 7. Link or Zip File to Access the Final Version of the Implemented Software
 - GitHub Repository: [https://github.com/dharmik529/470FinalProject](https://github.com/dharmik529/470FinalProject)
 
-## 9. Conclusions - Post Mortem Documentation
+## 8. Conclusions - Post Mortem Documentation
 
 ### Team Conclusions
 - The project was successfully completed within the estimated timeline.
